@@ -24,8 +24,8 @@ def augment(img):
 
     if scale > 1:
         nh, nw = scaled.shape[:2]
-        start_y = (nh - h) // 2
-        start_x = (nw - w) // 2
+        start_y = max(0, (nh - h) // 2)
+        start_x = max(0, (nw - w) // 2)
         img = scaled[start_y:start_y+h, start_x:start_x+w]
     else:
         nh, nw = scaled.shape[:2]
