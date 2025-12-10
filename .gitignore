@@ -1,3 +1,5 @@
 venv/
 data/
 augment.py
+webcam_results/
+test_webcam.py
