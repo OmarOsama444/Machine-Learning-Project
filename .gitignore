@@ -1,4 +1,3 @@
 venv/
-dataset/
-augmented/
-new_extr.py
+data/
+augment.py
